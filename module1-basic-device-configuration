@@ -1,0 +1,9 @@
+In this module the main objectives are the following:
+
+-Configure intial settings on a Cisco switch
+-Configure switch ports to meet network requirements
+-Configure secure management access on a switch 
+-Configure basic settings on a router to route between two directly-connected networks, using CLI.
+Verify connectivity between two networks that are directly connected to a router.
+
+  
