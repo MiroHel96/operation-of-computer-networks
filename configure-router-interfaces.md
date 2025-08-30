@@ -71,9 +71,12 @@ PC1 also had wrong subnetmask so I reconfigured it to 255.255.255.128
 
 And now my network works and I have configured basic router Interfaces. 
 
+From CO-pilot
+
+<img width="964" height="1208" alt="image" src="https://github.com/user-attachments/assets/8d803486-457b-440a-ba73-20932d951299" />
 
 
-
+Excersises from Haaga-Helia University 2025 and Cisco Packet Tracer. 
 
 
 
