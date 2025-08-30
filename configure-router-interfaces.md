@@ -48,7 +48,32 @@ Lastly I configured IPv6 addresses for PC3 and PC4.
 
 The last part of the excersise was to test networks connectivity. I did that with ping. 
 
-Ping test was made from PC1 to PC2 and PC2 to Dual Stack server. 
+Ping test was made from PC1 to PC2 and PC1 to Dual Stack server. 
+As you can see first ping test was succesfull. Only one packet lost, but that would be 100% on second ping test. Which is important note when doing a ping test on a host.
+
+<img width="699" height="601" alt="image" src="https://github.com/user-attachments/assets/32755880-7e4e-4ea4-b82c-d8d2a41ce020" />
+
+Same ping test from PC3 to PC4 and PC3 to Dual Stack Server.
+
+Ping did not work to Dual stack server. 
+
+Serial interface is down and it has different IPv6 address. I configuret correctly and did another test and ping was successfull. This time I used Ipv6 address for the ping. I used IPv4 first which does not work.
+
+<img width="703" height="714" alt="image" src="https://github.com/user-attachments/assets/d4e8a3f0-0c8e-4f20-90ff-9e5ce1f1c961" />
+
+PC1 also had wrong subnetmask so I reconfigured it to 255.255.255.128
+
+<img width="672" height="375" alt="image" src="https://github.com/user-attachments/assets/b76f7d8a-6d2f-43d9-a8f6-00b04f239965" />
+
+<img width="702" height="593" alt="image" src="https://github.com/user-attachments/assets/7ad5a0c7-f2d1-47d0-a2db-b46697cfaa41" />
+
+
+
+And now my network works and I have configured basic router Interfaces. 
+
+
+
+
 
 
 
