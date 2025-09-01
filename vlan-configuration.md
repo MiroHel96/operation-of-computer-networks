@@ -39,9 +39,17 @@ I opened S1 CLI and configured the following VLANs and Names for them.
 
 
 
-After that I verified my VLAN configurations.
+After that I verified my VLAN configurations and saved my configuration to the switch with command "copy running-config startup-config".
 
 
 <img width="702" height="713" alt="image" src="https://github.com/user-attachments/assets/67bfff39-c115-4e25-ad37-bd38ca1740e4" />
+
+After configuring S1 I did the same configurations for the S2 and S3.
+
+
+# Objective 3 Assign VLANs to the active ports. 
+
+After I have configured VLANs for each switch I must then configure each individual VLAN to correct interface.
+
 
 
