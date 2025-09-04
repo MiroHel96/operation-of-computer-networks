@@ -55,4 +55,23 @@ After configuring the correct VLANs I verified them using command show vlan brie
 
 <img width="627" height="296" alt="image" src="https://github.com/user-attachments/assets/f97ecd01-4cd1-46d6-a4f2-d9a371b28490" />
 
+## Assign VLANs to Ports 
+
+After creating VLANs I had to assign them to correct interfaces/ports.
+
+Table for the interfaces and ports.
+<img width="709" height="177" alt="image" src="https://github.com/user-attachments/assets/43e07a12-a19a-49e9-aa3b-7a7570a12e0d" />
+
+I opened S2 CLI and entered configuation mode. I used following command to assign VLANs ports:
+ - interface range f0/1-8, allows to configure multiple ports at the same time.
+ - switchport mode access, makes the port to access port used for host etc.
+ - switchport access vlan 10, identifies which vlan to assigns the settings.
+
+S2 configurations
+<img width="700" height="713" alt="image" src="https://github.com/user-attachments/assets/9af1cabf-55e7-41f9-8c54-0df367958e00" />
+
+
+
+
+
 
