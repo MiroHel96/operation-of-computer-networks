@@ -71,6 +71,14 @@ S2 configurations
 <img width="700" height="713" alt="image" src="https://github.com/user-attachments/assets/9af1cabf-55e7-41f9-8c54-0df367958e00" />
 
 
+S3 Configurations 
+<img width="702" height="711" alt="image" src="https://github.com/user-attachments/assets/f94cdeea-8e9b-4388-a5a3-28451f58413f" />
+
+
+After configuration I save the configurations using command "copy running-config startup-config". Finally I did a ping test from PC1 to PC6 to test if the connection works. It did not, so the problem most likely is that I have not configured trunk prots for S1,S2 and S3. 
+
+
+<img width="702" height="711" alt="image" src="https://github.com/user-attachments/assets/4df158b3-bc10-48d8-9bf7-a0c638c665fc" />
 
 
 
