@@ -60,5 +60,14 @@ Router in the network does not have interface configured to trunk. It has to be 
 
 <img width="696" height="711" alt="image" src="https://github.com/user-attachments/assets/56507f29-b4f1-4cc0-88b8-e9aff6dcd917" />
 
+<img width="641" height="251" alt="image" src="https://github.com/user-attachments/assets/20068c60-31ac-43c3-b3a7-fc8c9048bd3b" />
+
+<img width="637" height="210" alt="image" src="https://github.com/user-attachments/assets/1176d936-08af-4ced-9669-33552c98c45e" />
+
+After configuring trunking to G0/1 I tested the ping and it worked as excepted. 
+
+
+
+
 
 
