@@ -43,6 +43,23 @@ Next I configured SVI for MLS each VLAN.
 
 After configurin IP addresses for each VLAN SVI interface, I configured G0/1 as a static trunk port for MLS. 
 
+<img width="632" height="299" alt="image" src="https://github.com/user-attachments/assets/4027eac2-523c-4b20-a40b-6c77266d131a" />
+
+<img width="631" height="160" alt="image" src="https://github.com/user-attachments/assets/627ebf0d-d38b-43f9-a4f2-a943e6546d52" />
+
+<img width="634" height="298" alt="image" src="https://github.com/user-attachments/assets/d31fb7b5-f593-422f-8f1a-160363c2b92f" />
+
+Next I had to configure S1 with trunking because there is a native VLAN mismatch. Both ends of interfaces has to be configured with trunking. 
+
+<img width="633" height="519" alt="image" src="https://github.com/user-attachments/assets/bdb37aa8-6619-4d31-9259-ee8c507759de" />
+
+After configuring trunking for MLS and S1 I enabled routing in MLS. 
+
+<img width="638" height="457" alt="image" src="https://github.com/user-attachments/assets/82dff751-9a27-41f5-a09b-b37ab1fabd3a" />
+
+Finally I verfied connectivity.
+
+
 
 # Part 3 Configure IPv6 Inter-VLAN Routing
 
