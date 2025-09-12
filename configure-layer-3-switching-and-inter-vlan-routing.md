@@ -57,11 +57,23 @@ After configuring trunking for MLS and S1 I enabled routing in MLS.
 
 <img width="638" height="457" alt="image" src="https://github.com/user-attachments/assets/82dff751-9a27-41f5-a09b-b37ab1fabd3a" />
 
-Finally I verfied connectivity.
+Finally I verfied connectivity. Ping did not work wor any of the switches or between MLS. I did not have VLAN99 IP address configured. I configured IP address for VLAN 99 to both interfaces.
 
-
+<img width="636" height="342" alt="image" src="https://github.com/user-attachments/assets/5d89f856-c6cf-48da-800d-0b63f1902d79" />
 
 # Part 3 Configure IPv6 Inter-VLAN Routing
 
+First step was to enable IPv6 Routing 
 
-# Part 4 
+<img width="639" height="99" alt="image" src="https://github.com/user-attachments/assets/1528c4f2-8d39-4e70-a8f1-3c0ce59a9d71" />
+
+
+Next I configured IPv6 addresses for VLAN 10, VLAN 20 and VLAN 30. 
+
+<img width="637" height="521" alt="image" src="https://github.com/user-attachments/assets/0facb281-b038-4f04-8cad-08f819f1af07" />
+
+After configuring VLAN IPv6 Addresses I configured G0/2 MLS interface for IPv6 address.
+
+<img width="633" height="45" alt="image" src="https://github.com/user-attachments/assets/8e7cfa72-7d9b-4377-aede-62351287dd8a" />
+
+Now I have configured Layer 3 Switching and Inter-LAN Routing. 
