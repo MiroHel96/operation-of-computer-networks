@@ -145,7 +145,17 @@ Next I configured F0/23-24 interfaces in S3 with the same commands as S2. Except
 
 <img width="639" height="923" alt="image" src="https://github.com/user-attachments/assets/fc77606b-98bd-4b48-a45a-15281d8d4176" />
 
+No everything Is set, but STP is still blocking GigaBit ports. I have to restore these settings by configuring S1 to be primary root for VLAN 1.
 
+<img width="615" height="330" alt="image" src="https://github.com/user-attachments/assets/a05c00a2-b74a-4318-9766-3eb60ca28f8a" />
+
+I used the following command: `spanning-tree vlan 1 root primary`, alternatively I could also had set priority to `24576` with command: `spanning-tree vlan 1 priority 24576`.
+
+<img width="615" height="147" alt="image" src="https://github.com/user-attachments/assets/290eb2ce-6293-4680-82b7-a2bea08e8e3f" />
+
+Now I have successfully configured different EtherChannels for Cisco network. 
+
+<img width="620" height="340" alt="image" src="https://github.com/user-attachments/assets/7648e49c-97cd-4852-be55-9f452968f7ef" />
 
 
 # EtherChannel Configuration Guidelines and Restrictions
