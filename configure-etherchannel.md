@@ -67,7 +67,7 @@ After S1 I configured settings for S2 and S3 according to the Port Channel Table
 Finally I used command `switchport nonegotiate` to suppress DTP frames and reduce unnecessary traffic.
 
 
-# Part 2 Configure an EtherChannel with Cisco PAgP
+# Part 2 Configure an EtherChannel with Cisco PAgP (Port Aggregation Protocol).
 
 Before configuring PAgP to ports I manually shut them down. It is recommended when cofigurin EtherChannels, because EtherChannel Misconfig Guard may place these ports into err-disabled state.
 
@@ -119,8 +119,27 @@ I configured S1 with the following commands:
 
 <img width="658" height="495" alt="image" src="https://github.com/user-attachments/assets/92137620-9f19-4ff6-a581-252bd4647a00" />
 
+No I have configured LACP (Link Aggregation Control Protocol) to S1 G0/1-2 ports, but it's still in down state. I have to configure S2 next. 
+
+<img width="631" height="284" alt="image" src="https://github.com/user-attachments/assets/5094444e-d959-42d9-9949-7115f1905061" />
 
 # Part 4 Configure a Redundant EtherChannel Link
+
+Next I had to configure Port Channel 3 for switch S2. 
+
+I used the following commands for S2: 
+- `interface range f0/23 - 24`
+- `channel-group 3 mode passive`, LACP is only used if another LACP device is detected. 
+- `no shutdown`
+
+- `interface port-channel 3`
+- `switchport mode trunk`
+
+
+<img width="639" height="598" alt="image" src="https://github.com/user-attachments/assets/46ad6da5-2f1c-4061-b4c0-8048ce1ceb8f" />
+
+Next I configured F0/23-24 interfaces in S3 with the same commands as S2. Except I set channel-group 3 mode to `active`. So S3 interfaces will actively try to seek another LACP port.
+
 
 # EtherChannel Configuration Guidelines and Restrictions
 
