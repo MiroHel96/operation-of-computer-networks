@@ -41,6 +41,24 @@ Command `S1# show interfaces trunk`, shows if there are trunk ports configured i
 
 <img width="659" height="119" alt="image" src="https://github.com/user-attachments/assets/3fffa9a0-c1d4-4145-b8eb-75a288b3c481" />
 
+There is no trunk ports configured in any of the switches therefore I must configure every connected interface as a trunk port. 
+
+I opened S1 terminal and used the following commands:
+
+- `configure terminal`
+- `interface range fastEthernet 0/21-22`
+- `switchport mode trunk`
+- `switchport trunk native vlan 1`
+
+
+<img width="642" height="270" alt="image" src="https://github.com/user-attachments/assets/84029d4c-40ee-4030-9f3f-81e287b7606e" />
+
+<img width="638" height="254" alt="image" src="https://github.com/user-attachments/assets/a270f286-2d52-4ed0-a108-ebe2cba4f06e" />
+
+<img width="636" height="85" alt="image" src="https://github.com/user-attachments/assets/c4620447-56ff-4b29-be77-373cf5b3687e" />
+
+
+
 
 
 # Part 2 Configure an EtherChannel with Cisco PAgP
