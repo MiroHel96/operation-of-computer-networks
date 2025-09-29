@@ -119,9 +119,12 @@ I configured S1 with the following commands:
 
 <img width="658" height="495" alt="image" src="https://github.com/user-attachments/assets/92137620-9f19-4ff6-a581-252bd4647a00" />
 
-No I have configured LACP (Link Aggregation Control Protocol) to S1 G0/1-2 ports, but it's still in down state. I have to configure S2 next. 
+No I have configured LACP (Link Aggregation Control Protocol) to S1 G0/1-2 ports, but it's still in down state. I have to configure S2 next with the same settings.
 
 <img width="631" height="284" alt="image" src="https://github.com/user-attachments/assets/5094444e-d959-42d9-9949-7115f1905061" />
+
+<img width="635" height="314" alt="image" src="https://github.com/user-attachments/assets/3398fe9c-7933-4776-a5ce-013388096c1c" />
+
 
 # Part 4 Configure a Redundant EtherChannel Link
 
@@ -139,6 +142,10 @@ I used the following commands for S2:
 <img width="639" height="598" alt="image" src="https://github.com/user-attachments/assets/46ad6da5-2f1c-4061-b4c0-8048ce1ceb8f" />
 
 Next I configured F0/23-24 interfaces in S3 with the same commands as S2. Except I set channel-group 3 mode to `active`. So S3 interfaces will actively try to seek another LACP port.
+
+<img width="639" height="923" alt="image" src="https://github.com/user-attachments/assets/fc77606b-98bd-4b48-a45a-15281d8d4176" />
+
+
 
 
 # EtherChannel Configuration Guidelines and Restrictions
