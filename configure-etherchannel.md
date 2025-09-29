@@ -23,7 +23,25 @@ I opened each switches terminal and entered privileged EXCEC -mode to set hostna
 
 <img width="655" height="483" alt="image" src="https://github.com/user-attachments/assets/e0160581-63ae-4282-bc17-253802df90cb" />
 
-After setting name for each device I saved the configuration in privileged mode with `copy running-config starup-config`.
+After setting name for each device I saved the configuration in privileged mode with `copy running-config startup-config`.
+
+Before beginning `link aggregation` which is combining several physical links to one logical link. In Cisco environment it is `EtherChannel`. I must verify settings for each interface according EtherChannel guidelines in the end of this document. 
+
+Example of `S1`
+
+Command `S1# show interfaces | include Ethernet` includes word Ethernet with piping.
+
+<img width="642" height="425" alt="image" src="https://github.com/user-attachments/assets/b865e4d4-a99c-4ccc-a8cb-fb7575b88327" />
+
+Command `S1# show interface status` shows interfaces name, status, Vlan, Duplex, Speed and type. In this case Vlan 1, Duplex auto and speed auto.
+
+<img width="674" height="569" alt="image" src="https://github.com/user-attachments/assets/67ca0013-4b60-461b-bb65-55b9904f5039" />
+
+Command `S1# show interfaces trunk`, shows if there are trunk ports configured in the switch. S1 does not have any.
+
+<img width="659" height="119" alt="image" src="https://github.com/user-attachments/assets/3fffa9a0-c1d4-4145-b8eb-75a288b3c481" />
+
+
 
 # Part 2 Configure an EtherChannel with Cisco PAgP
 
