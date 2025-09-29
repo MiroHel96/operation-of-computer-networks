@@ -86,6 +86,21 @@ I opened S1 CLI and entered following commands:
 
 After S1 I did the same for S3. 
 
+Next I configured the logical interface to become a trunk port. In this case it's `Channel 1`. 
+
+I used the following commands in S1 and S3:
+- `interface port-channel 1`
+- `switchport mode trunk`
+
+<img width="635" height="211" alt="image" src="https://github.com/user-attachments/assets/3a072ab3-c21f-4aef-b248-934340ce4cec" />
+
+End result. The links are green so it is working as expected.
+
+<img width="658" height="330" alt="image" src="https://github.com/user-attachments/assets/cfcb4e3a-ab1d-4809-8297-4cfbcc4e24d9" />
+
+I confirmed this from S1 using command `show etherchannel summary`, as we can see from the result. Port-channel has flags S = Layer2 and U = in use. Now I have configured EtherChannel between S1 and S3.
+
+<img width="640" height="285" alt="image" src="https://github.com/user-attachments/assets/15921ef4-f51c-400e-bb7c-9ae3fc87e154" />
 
 
 # Part 3 Configure an 802.3ad LACP EtherChannel
