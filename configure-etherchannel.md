@@ -69,6 +69,24 @@ Finally I used command `switchport nonegotiate` to suppress DTP frames and reduc
 
 # Part 2 Configure an EtherChannel with Cisco PAgP
 
+Before configuring PAgP to ports I manually shut them down. It is recommended when cofigurin EtherChannels, because EtherChannel Misconfig Guard may place these ports into err-disabled state.
+
+I issued each interface with the following command `shutdown`
+
+Example of S3
+
+<img width="638" height="186" alt="image" src="https://github.com/user-attachments/assets/0aefe5f9-cbae-4e13-a212-967be104b577" />
+
+I opened S1 CLI and entered following commands:
+- `interface range f0/21-22`
+- `channel-group 1 mode desirable`, this sets the port to channel 1 and the mode desirable enables the switch to actively negotiate to form a PAgP link. 
+- `no shutdown`
+
+<img width="789" height="624" alt="image" src="https://github.com/user-attachments/assets/e5f7812a-36ed-4d06-8ca7-d57c80917251" />
+
+After S1 I did the same for S3. 
+
+
 
 # Part 3 Configure an 802.3ad LACP EtherChannel
 
