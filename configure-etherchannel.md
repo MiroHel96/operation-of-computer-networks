@@ -105,6 +105,20 @@ I confirmed this from S1 using command `show etherchannel summary`, as we can se
 
 # Part 3 Configure an 802.3ad LACP EtherChannel
 
+Next I configure `IEEE released 802.3ad, which is an open standard version of EtherChannel. It is commonly referred to as LACP.`. It works with different vendor's devices and it is not Cisco proprietary.
+
+I configured S1 with the following commands:
+- `interface range g0/1 - 2`
+- `channel-group 2 mode active`
+- `no shutdown`
+  
+- `interface port-channel 2`
+- `switchport mode trunk`
+
+<img width="662" height="677" alt="image" src="https://github.com/user-attachments/assets/8726c367-ecd4-4959-826e-fcd96fceede1" />
+
+<img width="658" height="495" alt="image" src="https://github.com/user-attachments/assets/92137620-9f19-4ff6-a581-252bd4647a00" />
+
 
 # Part 4 Configure a Redundant EtherChannel Link
 
