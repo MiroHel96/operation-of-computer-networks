@@ -11,9 +11,19 @@ In this excersise I configure different types of EtherChannels
 
 ## Port Channel Table 
 
+<img width="697" height="209" alt="image" src="https://github.com/user-attachments/assets/7d82b990-2b7e-43e1-be65-63e8bf48dbe8" />
+
 
 # Part 1 Configure Basic Switch settings
 
+First step was to assign hostname for each device: 
+`S1`, `S2` and `S3`
+
+I opened each switches terminal and entered privileged EXCEC -mode to set hostname for each switch. 
+
+<img width="655" height="483" alt="image" src="https://github.com/user-attachments/assets/e0160581-63ae-4282-bc17-253802df90cb" />
+
+After setting name for each device I saved the configuration in privileged mode with `copy running-config starup-config`.
 
 # Part 2 Configure an EtherChannel with Cisco PAgP
 
