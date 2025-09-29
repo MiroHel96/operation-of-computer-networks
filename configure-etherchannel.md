@@ -50,6 +50,7 @@ I opened S1 terminal and used the following commands:
 - `switchport mode trunk`
 - `switchport trunk native vlan 1`
 
+Next I configured GigabitEthernet with the same settings.
 
 <img width="642" height="270" alt="image" src="https://github.com/user-attachments/assets/84029d4c-40ee-4030-9f3f-81e287b7606e" />
 
@@ -57,8 +58,13 @@ I opened S1 terminal and used the following commands:
 
 <img width="636" height="85" alt="image" src="https://github.com/user-attachments/assets/c4620447-56ff-4b29-be77-373cf5b3687e" />
 
+After configuration I verified correct settings with command `show interfaces trunk`
 
+<img width="636" height="350" alt="image" src="https://github.com/user-attachments/assets/eb0c9869-3c1c-47f7-937b-e114054098c3" />
 
+After S1 I configured settings for S2 and S3 according to the Port Channel Table. 
+
+Finally I used command `switchport nonegotiate` to suppress DTP frames and reduce unnecessary traffic.
 
 
 # Part 2 Configure an EtherChannel with Cisco PAgP
