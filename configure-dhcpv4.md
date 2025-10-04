@@ -45,3 +45,11 @@ I used command `ip helper-address` on R1 and R3 GigabitEthernet 0/0 interfaces.
 
 <img width="614" height="202" alt="image" src="https://github.com/user-attachments/assets/1362ae73-118d-45ec-ae8e-adf63f6261ad" />
 
+After configuring R1 and R3 I had to change PC1 and PC2 to receive their IP addresses by using DHCP. 
+
+<img width="1400" height="704" alt="image" src="https://github.com/user-attachments/assets/74ba9a3e-9ff5-42ed-9456-b61cfc361326" />
+
+## Configure a Router as a DHCP Client
+
+
+
