@@ -35,5 +35,13 @@ I used the same commands for R3 LAN but used correct addresses from the addressi
 <img width="634" height="75" alt="image" src="https://github.com/user-attachments/assets/89ed2f3f-68d6-43d7-b833-b7acb3fc9d82" />
 
 
+## Configure DHCP Relay 
 
+As we can see R1 and R3 are in different subnet than R2. Therefore I have to configure Interfaces which are connected to R1 and R3 from R2 I have to configure them with helper IP addresses. After configuration R1 and R3 will act ass DHCP relay agents and they will forwatd DHCPv4 messages to other subnets. 
+
+I used command `ip helper-address` on R1 and R3 GigabitEthernet 0/0 interfaces.
+
+<img width="635" height="182" alt="image" src="https://github.com/user-attachments/assets/b4658842-9920-41e6-aa99-adc6e1d31457" />
+
+<img width="614" height="202" alt="image" src="https://github.com/user-attachments/assets/1362ae73-118d-45ec-ae8e-adf63f6261ad" />
 
