@@ -51,5 +51,34 @@ After configuring R1 and R3 I had to change PC1 and PC2 to receive their IP addr
 
 ## Configure a Router as a DHCP Client
 
+Next I had to configure R2 as a DHCP Client. 
+
+R2 need to receive it's IP address from the ISP. 
+
+I used the following commands to make R2 as a DHCP Client: 
+- `interface g0/1`, the interface which goes to the internet and to ISP. 
+- `ip address dhcp`, This command assumes ISP is configured to provided customers with IPV4 addressing information.
+- `no shutdown`
+
+<img width="635" height="344" alt="image" src="https://github.com/user-attachments/assets/c24c9140-bd79-4e91-86e4-d0ed3504d917" />
+
+## Verify DHCP and connectivity 
+
+Command `show ip dhcp binding` displays a list of all
+IPv4 address to MAC address bindings that have been provided by the DHCPv4 service
+
+<img width="632" height="132" alt="image" src="https://github.com/user-attachments/assets/57fb4e8d-501b-4ede-bd6e-a049bdea804d" />
+
+Finaly I tried to ping `www.cisco.com` from PC1 and DNS Server from PC2 to verify network connectivity.
+
+PC1 
+
+<img width="704" height="715" alt="image" src="https://github.com/user-attachments/assets/167f0ce6-fdbe-4b86-878e-03dd26b4249c" />
+
+
+PC2 
+
+<img width="701" height="709" alt="image" src="https://github.com/user-attachments/assets/2d60048a-6497-40bf-b354-c1aa34e12c5c" />
+
 
 
