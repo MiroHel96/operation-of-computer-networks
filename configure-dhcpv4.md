@@ -11,4 +11,12 @@
 
 ## Configure a Router as a DHCP Server 
 
+In my network topology I have R1 and R3 under R2. I had to exclude their IP Address range in R2 so there will not be duplicate IP addresses. These excluded 1 + 9 addressses will be used for static assigment of devices. 
+
+I used command `ip dhcp exclude-address 192.168.10.1 192.168.10.10` and `ip dhcp exclude-address 192.168.30.1 192.168.30.10` in R2 Privileged EXEC configuration mode.
+
+
+<img width="638" height="444" alt="image" src="https://github.com/user-attachments/assets/a07d66f4-a19e-4c88-b5aa-4cd21c24e847" />
+
+<img width="633" height="60" alt="image" src="https://github.com/user-attachments/assets/a20e6cfa-f743-4a87-bce7-29668ee741c2" />
 
