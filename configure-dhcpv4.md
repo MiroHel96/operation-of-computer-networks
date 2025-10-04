@@ -20,3 +20,20 @@ I used command `ip dhcp exclude-address 192.168.10.1 192.168.10.10` and `ip dhcp
 
 <img width="633" height="60" alt="image" src="https://github.com/user-attachments/assets/a20e6cfa-f743-4a87-bce7-29668ee741c2" />
 
+After excluding IP addresses I configured DHCP pools for R1 LAN and R3 LAN on R2 commandline.
+
+I used the following commands: 
+- `ip dhcp pool R1-LAN`
+- `network 192.168.10.0 255.255.255.0`
+- `default-router 192.168.10.1`
+- `dns-server 192.168.20.254`
+
+I used the same commands for R3 LAN but used correct addresses from the addressing table.
+
+<img width="634" height="141" alt="image" src="https://github.com/user-attachments/assets/8d9409f3-05cd-428b-b8fc-652bd8db7b62" />
+
+<img width="634" height="75" alt="image" src="https://github.com/user-attachments/assets/89ed2f3f-68d6-43d7-b833-b7acb3fc9d82" />
+
+
+
+
