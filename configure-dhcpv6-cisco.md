@@ -11,3 +11,18 @@
 
 I started with configuring `Router1` and `Router2`. I set basic configurations for them and password `letmein` and secret `cisco`. Next I configured each connected interface with IP addresses accoring to the table. 
 
+
+<img width="1314" height="938" alt="image" src="https://github.com/user-attachments/assets/2a76b400-f49d-45d4-8eb5-2e087448ce88" />
+
+
+
+<img width="1304" height="990" alt="image" src="https://github.com/user-attachments/assets/1d2db0cd-e2cd-4fdb-bac3-dcb20de0a9f2" />
+
+
+After configuring IPv6 addresses for each interface of routers I configured each PC IP addresses to use DHCP.
+
+
+<img width="1400" height="1418" alt="image" src="https://github.com/user-attachments/assets/e4e48853-fe40-4d5f-a529-d4907d1bba53" />
+
+
+## TO Be continued
