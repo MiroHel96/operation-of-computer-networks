@@ -31,3 +31,5 @@ After disablin rest of the ports I did a ping test from PC1 to PC2, to verify po
 <img width="703" height="712" alt="image" src="https://github.com/user-attachments/assets/a39c6aa0-30ed-4fec-9897-1ac16ff29939" />
 
 With the command `show port-security`, CLI displays the current port security settings and statistics for all interfaces. 
+
+Command `show port-security address`, displays secure MAC addresses that have been learned or manually configured on switch ports. It's more detailed view than `show port-security`.
