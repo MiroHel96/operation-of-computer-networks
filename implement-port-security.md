@@ -42,3 +42,11 @@ Next I connected Rogue Laptop to fastEthernet0/3, the interface is disabled so I
 
 <img width="700" height="1085" alt="image" src="https://github.com/user-attachments/assets/050f0c24-2bc7-4ce1-b8ef-5543a65ea5cd" />
 
+Next I pinged PC1 from the Rogue Laptop and as we can see from below I got response. I removed PC2 from F0/2 interface and connected Rogue Laptop to it. Ping test was not anymore successfull as I have already enabled port security into the interace. 
+
+<img width="693" height="708" alt="image" src="https://github.com/user-attachments/assets/c8cc47ea-7cc3-44c8-90a4-9de893a64738" />
+
+Verifcation of fastEthernet0/2 ports security can be done with the command `show port-security interface f0/2`. As we can see we have 5 violations, one from connecting the device to the port and four from the ping test. (ICMP messages include unauthorized MAC address).
+
+<img width="613" height="268" alt="image" src="https://github.com/user-attachments/assets/eeeb217f-0b6b-463c-97a8-c2fcbdfb1a52" />
+
