@@ -26,3 +26,8 @@ After configuring F0/1 and F0/2 interfaces, I disabled remaining interfaces to p
 
 <img width="677" height="766" alt="image" src="https://github.com/user-attachments/assets/442afdc5-3054-4aae-bd2a-602608d97a5f" />
 
+After disablin rest of the ports I did a ping test from PC1 to PC2, to verify port security is enabled. PC1 and PC2 should now be in the running configuration, which I verified with the command `show run | begin interface`. As we can see from the snapshot below, port security is enabled in interface F0/1 and F0/2. 
+
+<img width="703" height="712" alt="image" src="https://github.com/user-attachments/assets/a39c6aa0-30ed-4fec-9897-1ac16ff29939" />
+
+With the command `show port-security`, CLI displays the current port security settings and statistics for all interfaces. 
