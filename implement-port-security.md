@@ -32,4 +32,13 @@ After disablin rest of the ports I did a ping test from PC1 to PC2, to verify po
 
 With the command `show port-security`, CLI displays the current port security settings and statistics for all interfaces. 
 
+<img width="621" height="156" alt="image" src="https://github.com/user-attachments/assets/4a8d56a0-c0a7-4b85-8230-7d9055b15bc8" />
+
 Command `show port-security address`, displays secure MAC addresses that have been learned or manually configured on switch ports. It's more detailed view than `show port-security`.
+
+<img width="614" height="98" alt="image" src="https://github.com/user-attachments/assets/81cc7887-a511-403c-be22-bc0556124f06" />
+
+Next I connected Rogue Laptop to fastEthernet0/3, the interface is disabled so I had to enable it with `no shutdown` command.
+
+<img width="700" height="1085" alt="image" src="https://github.com/user-attachments/assets/050f0c24-2bc7-4ce1-b8ef-5543a65ea5cd" />
+
