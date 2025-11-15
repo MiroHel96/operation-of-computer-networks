@@ -22,4 +22,7 @@ In this excersise I issued command `switchport port-security violation restrict`
 
 <img width="701" height="970" alt="image" src="https://github.com/user-attachments/assets/738051cb-3637-41fc-aac1-5b85d5e430a9" />
 
-After configuring F0/1 and F0/2 interfaces, I disabled remaining interfaces to prevent connecting unauthorized devices to the switch. 
+After configuring F0/1 and F0/2 interfaces, I disabled remaining interfaces to prevent connecting unauthorized devices to the switch. I used the following commands `interface range f0/3 - 24, g0/1 - 2` and `shutdown` to disable rest of the ports.
+
+<img width="677" height="766" alt="image" src="https://github.com/user-attachments/assets/442afdc5-3054-4aae-bd2a-602608d97a5f" />
+
