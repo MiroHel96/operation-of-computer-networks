@@ -50,3 +50,4 @@ Verifcation of fastEthernet0/2 ports security can be done with the command `show
 
 <img width="613" height="268" alt="image" src="https://github.com/user-attachments/assets/eeeb217f-0b6b-463c-97a8-c2fcbdfb1a52" />
 
+Now I have implemented basic port securify. 
