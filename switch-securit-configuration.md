@@ -62,10 +62,33 @@ In this part of the excersise I implement port security to SW-1. Port security i
 
 First I verify ports that are up by using command `show ip interface brief | include up `, as we can see interfaces F0/1, F0/2, F0/10 and F0/24 are up. Also G0/1 and G0/2 are up. 
 
-
-
 <img width="635" height="138" alt="image" src="https://github.com/user-attachments/assets/6af5c978-bb27-4402-8545-d8c297c7ea36" />
 
+This excersise has several settings to port-securit, I will break them into seperate parts. 
+
+### Port-security to all active ports 
+
+Port securiy can be applied to port using the command `switchport port-security`. I issued this command to all active interfaces. 
+
+### Maximum on 4 MAC addresses learned by port 
+
+Maximum MAC addresses learned by port can be configured using the command `switchport port-security maximum 4`. I also applied this command to all active ports.
+
+### F0/1 Configure static MAC address with port-security 
+
+To configure PC's MAC address manually to switch interface I have to verify it and configure it to the interface F0/1 with command `switchport port-security mac-address`. I verified MAC addresses from SW1 CAM -table. As we can see F0/1 has MAC address `0010.11e8.3cbb`. It is already configured so I do not need to configure it, if I try I will get the following error. `Found duplicate mac-address 0010.11e8.3cbb`
+
+<img width="635" height="299" alt="image" src="https://github.com/user-attachments/assets/a14b09c0-5f66-407e-a4ea-0b20c2a67f9d" />
+
+<img width="636" height="113" alt="image" src="https://github.com/user-attachments/assets/a5d936c9-646d-4f4c-a1ef-355846bdd8d6" />
+
+### Active ports learn MAC addresses and add them to the running confiugration
+
+
+
+### Port Security violation mode 
+
+Violation mode can be configured with the command `switchport port-security violation restrict`. Mode `restrict` will do the following `Drops packets from unauthorized MAC addresses and generates log messages, SNMP traps, and increments violation counter. Port stays up.` - Microsoft Copilot. This is the correct setting for this excersise as default violation mode will shutdown the port. Protect -mode is not valid therefore it won't generate syslog messages to the administrator. 
 
 
 # Part 4 Confiugring PortFast, and BDUP Guard (DHCP Snnooping)
