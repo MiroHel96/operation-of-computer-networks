@@ -105,6 +105,25 @@ Port F0/10 is configured with the same settings as the other active fastEthernet
 <img width="635" height="282" alt="image" src="https://github.com/user-attachments/assets/a5662eb2-11c4-4326-bb29-b9cd1d42556f" />
 
 
-
 # Part 4 Confiugring PortFast, and BDUP Guard (DHCP Snnooping)
+
+In this part I configure PortFast, and BPDU Guard. These are used to mitigate Spanning Tree Protocol (STP) attacks. PortFast immediately bring a port to the forwarding state from blocking state, it is used to skip listening and learning states of STP. PortFast should be applied to all end-user access port (untrusted ports). 
+
+BDPU Guard protect ports configured with PortFast, if a port that is configured with BDPU Guard detects a BDPU message the switch assumes another switch is connected to the port and shuts it down. (err-disable).
+
+### Configuring PortFast to each active SW-1 access port 
+
+I used the command `spanning-tree portfast` on each active access port in SW1. 
+
+<img width="634" height="355" alt="image" src="https://github.com/user-attachments/assets/ef2a8c8b-d8bd-447d-b6a1-5358c898840c" />
+
+Verifying that PortFast is in use, I used commads `show spanning-tree interface fastEthernet 0/1` and `show running-config`.
+
+<img width="631" height="267" alt="image" src="https://github.com/user-attachments/assets/a788009b-2357-4c97-8a91-a91ec77c430a" />
+
+<img width="635" height="280" alt="image" src="https://github.com/user-attachments/assets/d0abf77e-1602-4772-b66e-8e0d5df1c083" />
+
+
+
+
 
