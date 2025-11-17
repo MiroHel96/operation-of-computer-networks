@@ -78,8 +78,11 @@ Maximum MAC addresses learned by port can be configured using the command `switc
 
 To configure PC's MAC address manually to switch interface I have to verify it and configure it to the interface F0/1 with command `switchport port-security mac-address`. I verified MAC addresses from SW1 CAM -table. As we can see F0/1 has MAC address `0010.11e8.3cbb`. It is already learned dynamically by the switch if I try to configure it as static, I will get the following error `Found duplicate mac-address 0010.11e8.3cbb`. 
 
-To solve this problem I try to clear the MAC address from the CAM-table by using the following command `clear mac address-table dynamic address 0010.11e8.3cbb`.
+To solve this problem I try to clear the MAC address from the CAM-table by using the following command `clear mac-address-table dynamic`. I also tried to clear dynamically learned addresses for port-security but I still get the error. I have to return to this probles later and try again. 
 
+<img width="638" height="379" alt="image" src="https://github.com/user-attachments/assets/a606acea-b152-43a5-99ee-e63286743d11" />
+
+<img width="633" height="183" alt="image" src="https://github.com/user-attachments/assets/ad5ac1ef-300b-44e6-a89b-6131cf491c43" />
 
 <img width="635" height="299" alt="image" src="https://github.com/user-attachments/assets/a14b09c0-5f66-407e-a4ea-0b20c2a67f9d" />
 
