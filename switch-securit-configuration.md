@@ -40,9 +40,13 @@ I encountered an issue, both switches kept sending following error `CDP-4-NATIVE
 
 # Part 2 Securing unused SwitchPorts
 
-In this part I shutdown all of the unused ports on SW-1 and SW-2. 
+In this part I shutdown all of the unused ports on SW-1.
 
 <img width="440" height="131" alt="image" src="https://github.com/user-attachments/assets/aa47ca63-e6b9-424e-a7ba-1f05b2be6699" />
+
+As we can see from below, all of the unused ports are `administratively down`. After shutting down all unsused ports I created a VLAN 999 named `BlackHole`, in there I moved all of the unused ports.
+
+<img width="701" height="709" alt="image" src="https://github.com/user-attachments/assets/4e4f8b99-96cd-42c3-848f-fa16b17a63e5" />
 
 
 # Part 3 Implementing Port Security 
