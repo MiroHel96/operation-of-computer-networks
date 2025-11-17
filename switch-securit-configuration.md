@@ -56,8 +56,15 @@ Creating the BlackHole VLAN and assigning all unused ports to it.
 
 <img width="635" height="367" alt="image" src="https://github.com/user-attachments/assets/18b202b7-c45b-4710-8f5d-4e707a6cf639" />
 
-
 # Part 3 Implementing Port Security 
+
+In this part of the excersise I implement port security to SW-1. Port security is used to allow only authorized devices to connect into switchports. This is used to secure switch from connecting eg a rogue laptop in to company's network in switching closet. 
+
+First I verify ports that are up by using command `show ip interface brief | include up `, as we can see interfaces F0/1, F0/2, F0/10 and F0/24 are up. Also G0/1 and G0/2 are up. 
+
+<img width="635" height="138" alt="image" src="https://github.com/user-attachments/assets/6af5c978-bb27-4402-8545-d8c297c7ea36" />
+
+
 
 # Part 4 Confiugring PortFast, and BDUP Guard (DHCP Snnooping)
 
