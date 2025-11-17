@@ -48,6 +48,14 @@ As we can see from below, all of the unused ports are `administratively down`. A
 
 <img width="701" height="709" alt="image" src="https://github.com/user-attachments/assets/4e4f8b99-96cd-42c3-848f-fa16b17a63e5" />
 
+Creating the BlackHole VLAN and assigning all unused ports to it.
+
+<img width="632" height="74" alt="image" src="https://github.com/user-attachments/assets/a5074863-b216-4ece-8252-cbe237e2769a" />
+
+<img width="637" height="103" alt="image" src="https://github.com/user-attachments/assets/a123c5cd-508d-48fb-86ff-4d16fee308b2" />
+
+<img width="635" height="367" alt="image" src="https://github.com/user-attachments/assets/18b202b7-c45b-4710-8f5d-4e707a6cf639" />
+
 
 # Part 3 Implementing Port Security 
 
