@@ -124,6 +124,26 @@ Verifying that PortFast is in use, I used commads `show spanning-tree interface 
 <img width="635" height="280" alt="image" src="https://github.com/user-attachments/assets/d0abf77e-1602-4772-b66e-8e0d5df1c083" />
 
 
+### Enabling BPDU Guard on active access ports on SW-1
+
+To enable BPDU on an interface the following command can be used `spanning-tree bpduguard enable`, I issued previous command to all active interfaces on SW-1.
+
+<img width="636" height="201" alt="image" src="https://github.com/user-attachments/assets/9336ebe3-0175-4f70-9449-acc66bce67ef" />
+
+Finally I configured globally BPDU Guard on all access ports on SW-2 with the command `spanning-tree portfast
+bpduguard default`. 
+
+
+
+## Summary 
+
+I have no implemented basic security principles to Cisco switch. Summary of the excersise: 
+- Connected G0/2 interfaces of SW-1 and SW-2, configured trunk ports for each link and disapled DTP negotiation.
+- Created VLAN 100 as native VLAN and configured each trunk port to use it.
+- Disabled all unused ports, created VLAN 999 (BlackHole) and moved them to it.
+- Implemented PortSecurity with static and dynamic adresses to SW-1, configured maximum 4 MAC addresses per interface and configured violation mode to restrict.
+- Configrued PortFast and BPDU as spanning-tree enhancements to SW-1 and SW-2
+
 
 
 
