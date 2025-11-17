@@ -33,10 +33,17 @@ Next I created `VLAN 100` with the name `Native` for both switches and configure
 
 <img width="633" height="481" alt="image" src="https://github.com/user-attachments/assets/deb770f7-3f43-47d2-886e-bc3084bd56bb" />
 
-
-
+I encountered an issue, both switches kept sending following error `CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet0/1 (1), with DLS1 GigabitEthernet1/0/1 (100).`, I needed to configure interface G0/1 with the following commands to correct the Native VLAN mismatch:
+- `Switchport mode trunk`
+- `Switchport trunk native vlan 100`
+- `Switchport nonegotiate`
 
 # Part 2 Securing unused SwitchPorts
+
+In this part I shutdown all of the unused ports on SW-1 and SW-2. 
+
+<img width="440" height="131" alt="image" src="https://github.com/user-attachments/assets/aa47ca63-e6b9-424e-a7ba-1f05b2be6699" />
+
 
 # Part 3 Implementing Port Security 
 
