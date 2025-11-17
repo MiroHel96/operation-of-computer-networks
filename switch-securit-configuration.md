@@ -23,6 +23,19 @@ I started by connecting a Straight trough cable between the switches in interfac
 
 I disabled DTP negotiation on both sides of the link. Dynami Trunking Protocol is used for autonegotiation whether a port should become an access port or a trunk port. I already configured them manually so there is no need for DTP. Disabling it also reduces attack surface for VLAN hopping. There is othe benefits, but the point is security in this excersise. 
 
+<img width="635" height="76" alt="image" src="https://github.com/user-attachments/assets/a8fa89e6-c220-4c88-a6fa-0782c189447c" />
+
+<img width="628" height="199" alt="image" src="https://github.com/user-attachments/assets/cec1ce6a-7971-4749-9673-4f4887108465" />
+
+Next I created `VLAN 100` with the name `Native` for both switches and configured all trunk ports to use VLAN 100 as the native VLAN.
+
+<img width="633" height="61" alt="image" src="https://github.com/user-attachments/assets/3417c22d-d0a3-4bc9-9066-12dddc484f39" />
+
+<img width="633" height="481" alt="image" src="https://github.com/user-attachments/assets/deb770f7-3f43-47d2-886e-bc3084bd56bb" />
+
+
+
+
 # Part 2 Securing unused SwitchPorts
 
 # Part 3 Implementing Port Security 
