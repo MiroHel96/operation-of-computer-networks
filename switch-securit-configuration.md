@@ -130,10 +130,18 @@ To enable BPDU on an interface the following command can be used `spanning-tree 
 
 <img width="636" height="201" alt="image" src="https://github.com/user-attachments/assets/9336ebe3-0175-4f70-9449-acc66bce67ef" />
 
-Finally I configured globally BPDU Guard on all access ports on SW-2 with the command `spanning-tree portfast
-bpduguard default`. 
+
+### Enabling PortFast by default on all access ports in SW-2
+
+I verified PortFast status from SW-2 with the command `show spanning-tree summary`, as we can see it is disabled. 
+
+<img width="635" height="402" alt="image" src="https://github.com/user-attachments/assets/ee9c3e66-5b24-44a3-a55a-d052b7a4ed61" />
 
 
+Finally I configured globally BPDU Guard on all access ports on SW-2 with the command ` spanning-tree
+portfast default g`, after configuration I verified it again from spanning-tree summary and we can see that PortFast is now enabled by default.
+
+<img width="632" height="611" alt="image" src="https://github.com/user-attachments/assets/6797bed1-683f-4dd8-947d-19aceaab2049" />
 
 ## Summary 
 
