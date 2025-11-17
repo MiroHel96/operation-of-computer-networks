@@ -62,6 +62,8 @@ In this part of the excersise I implement port security to SW-1. Port security i
 
 First I verify ports that are up by using command `show ip interface brief | include up `, as we can see interfaces F0/1, F0/2, F0/10 and F0/24 are up. Also G0/1 and G0/2 are up. 
 
+
+
 <img width="635" height="138" alt="image" src="https://github.com/user-attachments/assets/6af5c978-bb27-4402-8545-d8c297c7ea36" />
 
 
