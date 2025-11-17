@@ -11,7 +11,7 @@
 
 # Summary 
 
-In this packet tracer excersise I will implement security featurers to SW-1 and SW-2.  
+In this packet tracer excersise I will implement security featurers to SW-1 and SW-2. More advanced features are implemented on SW-1 for demostration purpose, there is no point to simulate same settings in this short excersise but both devices could have same security settings.  
 
 # Part 1 Creating a Secure Trunk
 
