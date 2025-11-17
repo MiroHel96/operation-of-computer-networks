@@ -76,19 +76,31 @@ Maximum MAC addresses learned by port can be configured using the command `switc
 
 ### F0/1 Configure static MAC address with port-security 
 
-To configure PC's MAC address manually to switch interface I have to verify it and configure it to the interface F0/1 with command `switchport port-security mac-address`. I verified MAC addresses from SW1 CAM -table. As we can see F0/1 has MAC address `0010.11e8.3cbb`. It is already configured so I do not need to configure it, if I try I will get the following error. `Found duplicate mac-address 0010.11e8.3cbb`
+To configure PC's MAC address manually to switch interface I have to verify it and configure it to the interface F0/1 with command `switchport port-security mac-address`. I verified MAC addresses from SW1 CAM -table. As we can see F0/1 has MAC address `0010.11e8.3cbb`. It is already learned dynamically by the switch if I try to configure it as static, I will get the following error `Found duplicate mac-address 0010.11e8.3cbb`. 
+
+To solve this problem I try to clear the MAC address from the CAM-table by using the following command `clear mac address-table dynamic address 0010.11e8.3cbb`.
+
 
 <img width="635" height="299" alt="image" src="https://github.com/user-attachments/assets/a14b09c0-5f66-407e-a4ea-0b20c2a67f9d" />
 
 <img width="636" height="113" alt="image" src="https://github.com/user-attachments/assets/a5d936c9-646d-4f4c-a1ef-355846bdd8d6" />
 
-### Active ports learn MAC addresses and add them to the running confiugration
+### Active ports learn MAC addresses and automatically add them to the running confiugration
 
+To allow switch to learn MAC addresses and add them to the running configuration command `switchport port-security mac-address sticky` can be used. It will stick the MAC address to the interface and save it to the running configuration, it will be erased if the switch is powered off and the configuration is not saved to NVRAM.
 
+<img width="630" height="147" alt="image" src="https://github.com/user-attachments/assets/3ca232f0-3dea-4d85-b38a-ac1759d73158" />
 
 ### Port Security violation mode 
 
 Violation mode can be configured with the command `switchport port-security violation restrict`. Mode `restrict` will do the following `Drops packets from unauthorized MAC addresses and generates log messages, SNMP traps, and increments violation counter. Port stays up.` - Microsoft Copilot. This is the correct setting for this excersise as default violation mode will shutdown the port. Protect -mode is not valid therefore it won't generate syslog messages to the administrator. 
+
+### Example 
+
+Port F0/10 is configured with the same settings as the other active fastEthernet ports so I will use it as an example configuration below.
+
+<img width="635" height="282" alt="image" src="https://github.com/user-attachments/assets/a5662eb2-11c4-4326-bb29-b9cd1d42556f" />
+
 
 
 # Part 4 Confiugring PortFast, and BDUP Guard (DHCP Snnooping)
