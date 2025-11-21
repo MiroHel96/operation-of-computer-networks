@@ -12,6 +12,16 @@
 
 ## Part 1 Configuring router
 
+In step 1 I had to configure PC3 and PC4 IP addresses according to the addressing table, after configuring IP addresses for the PC's I continued to configure basic router settings for R2.
+
+PC3 IP addresses the same was done for PC4 according to the IP table. 
+<img width="701" height="715" alt="image" src="https://github.com/user-attachments/assets/cdc3b170-05e7-45f9-aef5-118652e33d99" />
+
+
+### Configuring router settings 
+
+
+
 
 
 ## Part 2 Displaying router information 
