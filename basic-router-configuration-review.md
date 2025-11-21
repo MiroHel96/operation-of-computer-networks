@@ -43,6 +43,7 @@ The following commands were used below:
 Next I saved the configuration to keep the changes. 
 
 `copy running-config startup-config`
+
 <img width="637" height="115" alt="image" src="https://github.com/user-attachments/assets/40ca7736-c6a4-4dc4-ac1a-b99918662c2e" />
 
 ## Part 2 Displaying router information 
