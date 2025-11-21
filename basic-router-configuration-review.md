@@ -62,7 +62,13 @@ Next I generated user `SSHadmin` with password `55Hadm!n`. After creating the us
 
 In this section I secure R2 console connection with password and vty lines to accept only SSH connections. 
 
+Console
 
+<img width="636" height="1024" alt="image" src="https://github.com/user-attachments/assets/d70b5c8d-3f88-4b1f-8fac-c798acc94725" />
+
+SSH connection 
+
+<img width="631" height="468" alt="image" src="https://github.com/user-attachments/assets/4ed9aa0f-cf94-42a0-9a76-5cc093f8acd1" />
 
 
 ## Part 2 Displaying router information 
