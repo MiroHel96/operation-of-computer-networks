@@ -24,8 +24,13 @@ In this part I configure basic settings for R2. First step was to configure host
 
 <img width="635" height="130" alt="image" src="https://github.com/user-attachments/assets/4a4bc0a0-5484-47e1-a236-6929c8c6e2c5" />
 
-Next I configured encrypted password for privileged EXEC mode. 
+Next I configured encrypted password for privileged EXEC mode. To configure privileged EXEC mode encrypted password I issued command `enable secret` and after that password c1sco1234. I verified that the password is encrypted from the running configuration with the command `show running-configuration`. 
 
+<img width="637" height="227" alt="image" src="https://github.com/user-attachments/assets/1eb31589-eaaa-41ad-a539-c7ff01cc3738" />
+
+As shown below the privileged EXEC mode password is encrypted 
+
+<img width="632" height="344" alt="image" src="https://github.com/user-attachments/assets/19e76403-9d3b-4d0a-bcd1-222d041bc2cd" />
 
 
 ## Part 2 Displaying router information 
