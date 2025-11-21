@@ -64,11 +64,19 @@ In this section I secure R2 console connection with password and vty lines to ac
 
 Console
 
+I configured console with password cisco, session to logout after 6 minutes, enabled login and to prevent console messages to interupt commands I used command logging synchronous.
+
 <img width="636" height="1024" alt="image" src="https://github.com/user-attachments/assets/d70b5c8d-3f88-4b1f-8fac-c798acc94725" />
 
 SSH connection 
 
+I configured vty lines 0-15 to accept only ssh connection, logout timeout to 6 minutes, password cisco and enabled login with local database. 
+
 <img width="631" height="468" alt="image" src="https://github.com/user-attachments/assets/4ed9aa0f-cf94-42a0-9a76-5cc093f8acd1" />
+
+Next I generated banner `Unauthorized access is prohibited`, using `banner motd` -command in configuration menu.
+
+<img width="644" height="123" alt="image" src="https://github.com/user-attachments/assets/1e5b2eac-dc0a-453e-ba78-cff11bbed8e7" />
 
 
 ## Part 2 Displaying router information 
