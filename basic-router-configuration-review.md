@@ -46,4 +46,23 @@ Next I saved the configuration to keep the changes.
 
 <img width="637" height="115" alt="image" src="https://github.com/user-attachments/assets/40ca7736-c6a4-4dc4-ac1a-b99918662c2e" />
 
+### Password encryption and SSH 
+
+To encrypt plaintext passwords in Cisco devices you can use command `service password-encryption` in configuration mode. 
+
+<img width="637" height="158" alt="image" src="https://github.com/user-attachments/assets/dcd5bf84-3808-457f-8b99-c7095f3401d9" />
+
+Next I generated user `SSHadmin` with password `55Hadm!n`. After creating the user I generated SSH key, command `crypto key generate rsa general-keys modulus 1024`. 
+
+<img width="634" height="203" alt="image" src="https://github.com/user-attachments/assets/e1a5489e-0b8c-4c8a-8778-7179bc1f49e5" />
+
+<img width="640" height="634" alt="image" src="https://github.com/user-attachments/assets/9d14211d-135f-48b5-88ff-aa8588db2f17" />
+
+### Securing console and vty lines 
+
+In this section I secure R2 console connection with password and vty lines to accept only SSH connections. 
+
+
+
+
 ## Part 2 Displaying router information 
