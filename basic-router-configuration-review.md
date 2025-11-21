@@ -32,5 +32,14 @@ As shown below the privileged EXEC mode password is encrypted
 
 <img width="632" height="344" alt="image" src="https://github.com/user-attachments/assets/19e76403-9d3b-4d0a-bcd1-222d041bc2cd" />
 
+Next step was to configure domain name and disabling DNS lookup for the router. DNS lookup is disabled to prevent it from attempting to translate incorrect commands and typos as host names. 
+
+The following commands were used below: 
+- `ip domain-name` - ccna-lab.com
+- `no ip domain-lookup` - to disable domain-lookup from incorrect commands/typos
+
+<img width="635" height="452" alt="image" src="https://github.com/user-attachments/assets/7a8c6125-c8df-4fcb-b3e9-f5ed922d5a55" />
+
+
 
 ## Part 2 Displaying router information 
