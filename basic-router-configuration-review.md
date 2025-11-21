@@ -20,7 +20,11 @@ PC3 IP addresses the same was done for PC4 according to the IP table.
 
 ### Configuring router settings 
 
+In this part I configure basic settings for R2. First step was to configure hostname for the router, to configure hostname for the router I entered to privileged EXEC mode and from there to configuration mode. Command `hostname` is used to set the hostname of the device.
 
+<img width="635" height="130" alt="image" src="https://github.com/user-attachments/assets/4a4bc0a0-5484-47e1-a236-6929c8c6e2c5" />
+
+Next I configured encrypted password for privileged EXEC mode. 
 
 
 
