@@ -78,5 +78,9 @@ Next I generated banner `Unauthorized access is prohibited`, using `banner motd`
 
 <img width="644" height="123" alt="image" src="https://github.com/user-attachments/assets/1e5b2eac-dc0a-453e-ba78-cff11bbed8e7" />
 
+### Enabling IPv6 routing and configuring interfaces with IP addresses
+
+
+
 
 ## Part 2 Displaying router information 
