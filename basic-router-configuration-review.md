@@ -90,17 +90,40 @@ Verifying that routing is enabled
 
 <img width="637" height="511" alt="image" src="https://github.com/user-attachments/assets/55990a7c-942e-44e4-ab8f-124f4e5a7a5a" />
 
-After routing is enabled globally I configured each connected interface with IP addresses. I configured two GigibitEthernet and two Serial interfaces with the following IP addresses and issued `no shutdownb` command to each interface to turn on the link. 
+After routing is enabled globally I configured each connected interface with IPv4 and Ipv6 addresses. I configured two GigibitEthernet and two Serial interfaces with the following IP addresses and issued `no shutdownb` command to each interface to turn on the link. 
 
 Interfaces configured:
-- `G0/0/0` 2001:db8:acad:4::1 /64
-- `G0/0/1` 2001:db8:acad:5::1 /64
-- `S0/1/0` 2001:db8:acad:3::2 /64
-- `S0/1/1` 2001:db8:feed:224::1/64
+- `G0/0/0` 2001:db8:acad:4::1 /64 
+- `G0/0/1` 2001:db8:acad:5::1 /64 
+- `S0/1/0` 2001:db8:acad:3::2 /64 
+- `S0/1/1` 2001:db8:feed:224::1/64 
 
-
-
+### IPv6 configuration
 <img width="633" height="1005" alt="image" src="https://github.com/user-attachments/assets/783e0886-92a9-4f72-bb9a-ffca67d985b8" />
+
+Verification of interfaces `show ipv6 interface brief`
+
+<img width="475" height="218" alt="image" src="https://github.com/user-attachments/assets/9bb414ba-d149-46bd-8fd7-bb466079235c" />
+
+
+### IPv4 configuration
+
+Configuation of IPv4 addresses were the following: 
+- `G0/0/0` 10.0.4.1 /24
+- `G0/0/1` 10.0.5.1 /24
+- `S0/1/0` 10.0.3.2 /24
+- `S0/1/1` 209.165.200.225 /30
+
+
+<img width="632" height="367" alt="image" src="https://github.com/user-attachments/assets/d7789fd2-ac15-4cb0-b270-6438dd6327b7" />
+
+Verification of IPv4 interfaces 
+
+<img width="635" height="114" alt="image" src="https://github.com/user-attachments/assets/dfeeb2d9-b0b4-4a10-a225-a69b81a8da2d" />
+
+### Verifying network connectivity 
+
+After configuration of R2 I verfied that each host could communicate between networks to test if routing works.
 
 
 ## Part 2 Displaying router information 
