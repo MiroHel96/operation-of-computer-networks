@@ -80,6 +80,15 @@ Next I generated banner `Unauthorized access is prohibited`, using `banner motd`
 
 ### Enabling IPv6 routing and configuring interfaces with IP addresses
 
+To configure IPv6 routing in Cisco router you must use following command in configuration mode `ipv6 unicast-routing`. The following command enables IPv6 routing globally on your router. 
+
+Enabling routing in Cisco device
+
+<img width="639" height="209" alt="image" src="https://github.com/user-attachments/assets/b24a676f-9f41-4bd1-a139-fb9509a19ee9" />
+
+Verifying that routing is enabled 
+
+<img width="637" height="511" alt="image" src="https://github.com/user-attachments/assets/55990a7c-942e-44e4-ab8f-124f4e5a7a5a" />
 
 
 
