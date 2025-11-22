@@ -90,6 +90,17 @@ Verifying that routing is enabled
 
 <img width="637" height="511" alt="image" src="https://github.com/user-attachments/assets/55990a7c-942e-44e4-ab8f-124f4e5a7a5a" />
 
+After routing is enabled globally I configured each connected interface with IP addresses. I configured two GigibitEthernet and two Serial interfaces with the following IP addresses and issued `no shutdownb` command to each interface to turn on the link. 
+
+Interfaces configured:
+- `G0/0/0` 2001:db8:acad:4::1 /64
+- `G0/0/1` 2001:db8:acad:5::1 /64
+- `S0/1/0` 2001:db8:acad:3::2 /64
+- `S0/1/1` 2001:db8:feed:224::1/64
+
+
+
+<img width="633" height="1005" alt="image" src="https://github.com/user-attachments/assets/783e0886-92a9-4f72-bb9a-ffca67d985b8" />
 
 
 ## Part 2 Displaying router information 
