@@ -37,3 +37,14 @@ R3 `show standby brief`
 
 <img width="1268" height="160" alt="image" src="https://github.com/user-attachments/assets/fc8e5f4b-1aae-494e-a40f-d1596c3d3310" />
 
+After configuring HSRP I also had to reconfigure default gateways for S1, S2, PC-A and PC-B. 
+
+S1 reconfiguration using command `ip default gateway`
+<img width="1396" height="1408" alt="image" src="https://github.com/user-attachments/assets/95f53ec7-4a90-4af1-bcf2-f6d41f9f3e01" />
+
+<img width="1298" height="454" alt="image" src="https://github.com/user-attachments/assets/6b5dfbde-a584-4765-9015-ac686cf37339" />
+
+After configuring I did the same for S2 and modified IP settings for both both end devices. 
+
+<img width="1392" height="1410" alt="image" src="https://github.com/user-attachments/assets/aab65ada-39f5-448f-a282-ef345d10afdd" />
+
