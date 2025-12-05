@@ -18,5 +18,7 @@ In this Packet Tracer Excersise I configure Hot Standyby Router Protocol (HSRP),
 
 ## Configurig HSRP Standby Router 
 
+<img width="1294" height="522" alt="image" src="https://github.com/user-attachments/assets/ebe100af-7cc9-4c73-b205-aea87ae91a18" />
+
 
 ## Verifying HSRP Operation 
