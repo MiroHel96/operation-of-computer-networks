@@ -16,7 +16,12 @@ Switch 1 has two hosts connected to it PC1 and PC2. Both interfaces connecting t
 
 I opened S1 Command Line Interface and entered to configuration mode. Port security is configured into each interface, I issued command `interface range fastEthernet 0/1 -2` and issued command `switchport port-security` to enable port security in F0/1 and F0/2 interfaces. 
 
-Next I issued command `switchport port-security maximum 1`, this command allows only one device to access the port. Interfaces in this excersise are also configured to dynamically learn MAC addresses of devices. This can be configured with command `switchport port-security mac-address sticky` after configuring sticky address to the switch, I configured port security violation which allows different modes to be used. 
+Next I issued command `switchport port-security maximum 1`, this command allows only one device to access the port. Interfaces in this excersise are also configured to dynamically learn MAC addresses of devices. This can be configured with command `switchport port-security mac-address sticky` after configuring sticky address to the switch, I configured port security violation which allows different actions to be configured for the port by system administrator. These violations are in Cisco switches `shutdown(default)`, `restrict` and `protect`.
+
+More detail description of each violation:
+- Shutdown, the port is set to error-disabled state immediately, port LED is turned off and syslog message is sent. Violation counter is incrementet. The port must be manually switched back on by the administrator.
+- Restrict, the port drops packets with unknown source Mac until sufficient number of secure MAC addresses is dropped below the maxinum value or the maximum value is increased. Increments violation counter and sends a syslog message.
+- Protect, same procedure as restrict and no syslog sent. The least secure choice of security violation modes. 
 
 In this excersise I issued command `switchport port-security violation restrict`, it keeps the port active, drops packets from unknown MACs, and generates a log message. 
 
