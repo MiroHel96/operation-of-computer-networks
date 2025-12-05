@@ -63,3 +63,4 @@ After configuring I did the same for S2 and modified IP settings for both both e
 
 <img width="1392" height="1410" alt="image" src="https://github.com/user-attachments/assets/aab65ada-39f5-448f-a282-ef345d10afdd" />
 
+Now I have configured simple HSRP setup. 
