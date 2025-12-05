@@ -21,7 +21,7 @@ Next I issued command `switchport port-security maximum 1`, this command allows 
 More detail description of each violation:
 - Shutdown, the port is set to error-disabled state immediately, port LED is turned off and syslog message is sent. Violation counter is incrementet. The port must be manually switched back on by the administrator.
 - Restrict, the port drops packets with unknown source Mac until sufficient number of secure MAC addresses is dropped below the maxinum value or the maximum value is increased. Increments violation counter and sends a syslog message.
-- Protect, same procedure as restrict and no syslog sent. The least secure choice of security violation modes. 
+- Protect, same procedure as restrict and no syslog sent. The least secure choice of security violation modes.
 
 In this excersise I issued command `switchport port-security violation restrict`, it keeps the port active, drops packets from unknown MACs, and generates a syslog message. 
 
