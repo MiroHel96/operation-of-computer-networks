@@ -1,5 +1,9 @@
 # Cisco Packet Tracer - HSPR Configuration Guide
-In this Packet Tracer Excersise I configure Hot Standyby Router Protocol (HSRP), which is Cisco Proprietary First Hop Redundancy Protocol (FHRP).
+In this Packet Tracer Excersise I configure Hot Standyby Router Protocol (HSRP), which is Cisco Proprietary First Hop Redundancy Protocol (FHRP). 
+
+HSRP basic idea is to create redundancy for end devices default gateway. By default devices can only have one default gateway address and if the configured router goes down hosts don't know how to use seconF router if there is no FHRP protocol configured. 
+
+HSRP uses virtual router IP and MAC address to create one logical default gateway between multiple routers. One is active and another is standby router. If the active router goes down standby router takes over the role. 
 
 ## Network Topology 
 
