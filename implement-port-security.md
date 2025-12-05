@@ -10,7 +10,7 @@
 
 
 ## Part 1 Configure Port Security 
-In this Cisco Packet Tracer module I implement port security on a switch. Port security restricts port's ingress trafficc. It uses MAC adresses to verify which address is allowed to send traffic into the port. 
+In this Cisco Packet Tracer module I implement port security on a switch. Port security restricts port's ingress traffic. It uses MAC adresses to verify which address is allowed to send traffic into the port. 
 
 Switch 1 has two hosts connected to it PC1 and PC2. Both interfaces connecting these host needs to have port security. To configure port security into Cisco switch I did the following below.
 
