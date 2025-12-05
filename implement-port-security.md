@@ -23,7 +23,7 @@ More detail description of each violation:
 - Restrict, the port drops packets with unknown source Mac until sufficient number of secure MAC addresses is dropped below the maxinum value or the maximum value is increased. Increments violation counter and sends a syslog message.
 - Protect, same procedure as restrict and no syslog sent. The least secure choice of security violation modes. 
 
-In this excersise I issued command `switchport port-security violation restrict`, it keeps the port active, drops packets from unknown MACs, and generates a log message. 
+In this excersise I issued command `switchport port-security violation restrict`, it keeps the port active, drops packets from unknown MACs, and generates a syslog message. 
 
 <img width="701" height="970" alt="image" src="https://github.com/user-attachments/assets/738051cb-3637-41fc-aac1-5b85d5e430a9" />
 
