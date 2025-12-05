@@ -3,13 +3,24 @@ In this Packet Tracer Excersise I configure Hot Standyby Router Protocol (HSRP),
 
 ## Network Topology 
 
+<img width="1236" height="736" alt="image" src="https://github.com/user-attachments/assets/0141181c-1f49-4221-819f-2d4a2a65f1b9" />
 
 
 ## Addressing Table 
 
+<img width="1248" height="892" alt="image" src="https://github.com/user-attachments/assets/e5899982-0965-4ccc-a6b6-52c59caead1e" />
 
 
 ## Verifying Connectivity 
+
+I tested `tracert` -command from both hosts to the Web Server
+
+PC-A
+<img width="1398" height="742" alt="image" src="https://github.com/user-attachments/assets/59b2146f-8641-48fc-a3a7-dd37f487aedf" />
+
+PC-B, as we can see from the tracert HSRP is not configured, because PC-B tracert could not find a path to the Web Server after I disconnected link between S3 and R3. 
+
+<img width="1402" height="1638" alt="image" src="https://github.com/user-attachments/assets/f07749c9-0b4d-465e-a461-dabe01605cb8" />
 
 
 ## Configuring HSRP Active Router 
@@ -37,7 +48,7 @@ R3 `show standby brief`
 
 <img width="1268" height="160" alt="image" src="https://github.com/user-attachments/assets/fc8e5f4b-1aae-494e-a40f-d1596c3d3310" />
 
-After configuring HSRP I also had to reconfigure default gateways for S1, S2, PC-A and PC-B. 
+After configuring HSRP I also had to reconfigure default gateways for S1, S3, PC-A and PC-B. 
 
 S1 reconfiguration using command `ip default gateway`
 <img width="1396" height="1408" alt="image" src="https://github.com/user-attachments/assets/95f53ec7-4a90-4af1-bcf2-f6d41f9f3e01" />
