@@ -44,3 +44,28 @@ Finally I had to configure default static route for R3. I used the following com
 
 Finally I tested each PC's connectivity between eachother with `tracert` and `ping` commands. 
 
+Ping test from PC1 to PC2 and PC3 
+
+<img width="1390" height="1412" alt="image" src="https://github.com/user-attachments/assets/9c3693a3-4e19-407d-afb6-b2e57dde8d25" />
+
+Traceroute from PC1 to PC2 and PC3
+
+<img width="1254" height="582" alt="image" src="https://github.com/user-attachments/assets/ce9b140c-509e-4ef2-a4f0-99d92e6cc2e4" />
+
+ Ping test from PC2 to PC1 and PC3 
+
+ <img width="1262" height="768" alt="image" src="https://github.com/user-attachments/assets/fd24d536-71a8-429a-8081-28cbcf96b4b9" />
+
+Traceroute from PC2 to PC1 and PC3 
+
+<img width="1262" height="556" alt="image" src="https://github.com/user-attachments/assets/6a968979-f9e5-457e-a30e-35293c607577" />
+
+Ping test from PC3 to PC2 and PC1 
+
+<img width="1288" height="842" alt="image" src="https://github.com/user-attachments/assets/b0c7b860-0aa4-4b09-b7b8-5abbd31277a4" />
+
+Traceroute from PC3 to PC2 and PC1 
+
+<img width="1258" height="580" alt="image" src="https://github.com/user-attachments/assets/2766d5df-4f3a-4121-af40-c045df6b125c" />
+
+Aswe can see ping and traceroute tests were success and I can now conclude that all of the hosts in my network can communicate with eachother. 
