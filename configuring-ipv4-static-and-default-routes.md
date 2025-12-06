@@ -20,6 +20,11 @@ R3 configuring static route to `172.31.0.0/24` network.
 
 <img width="1266" height="84" alt="image" src="https://github.com/user-attachments/assets/42db8f32-c381-48cb-8ae1-61235ebdfc4c" />
 
+Configuring R1 router with static routes to PC2 and PC3 network. Both networks destination interface is R2 serial `172.31.1.192`
+
+<img width="1266" height="138" alt="image" src="https://github.com/user-attachments/assets/a442e518-8d30-4217-bb3b-1d559f12cbd4" />
+
+
 # Configuring Default Routes 
 
 
