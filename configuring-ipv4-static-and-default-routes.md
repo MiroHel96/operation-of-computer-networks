@@ -32,9 +32,15 @@ Next I configured directly connected route from R2 to R1 and R3
 
 <img width="1206" height="132" alt="image" src="https://github.com/user-attachments/assets/67b2709d-b671-46ed-9d21-760b23b90914" />
 
-
-
 # Configuring Default Routes 
+
+Finally I had to configure default static route for R3. I used the following command to create it `ip route 0.0.0.0 0.0.0.0 serial0/0/1`. I have now configure default static route which is "catch-all" route it is a route used by a router if nothing else does not match it's routing table, If there is not defautlt route the packet is dropped. 
+
+<img width="1286" height="710" alt="image" src="https://github.com/user-attachments/assets/a60631d0-125f-446b-975c-f2aab0497f52" />
+
 
 
 # Verify Connectivity 
+
+Finally I tested each PC's connectivity between eachother with `tracert` and `ping` commands. 
+
