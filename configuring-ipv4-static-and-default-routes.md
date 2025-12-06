@@ -16,6 +16,9 @@ R2 configuring static route to `172.31.1.128/26` network. Using command `ip rout
 
 <img width="1274" height="132" alt="image" src="https://github.com/user-attachments/assets/9ec8f28e-9c24-4550-9058-961f2b38fe83" />
 
+R3 configuring static route to `172.31.0.0/24` network.
+
+<img width="1266" height="84" alt="image" src="https://github.com/user-attachments/assets/42db8f32-c381-48cb-8ae1-61235ebdfc4c" />
 
 # Configuring Default Routes 
 
