@@ -24,9 +24,14 @@ Configuring R1 router with static routes to PC2 and PC3 network. Both networks d
 
 <img width="1268" height="344" alt="image" src="https://github.com/user-attachments/assets/ffc74092-45e4-466a-a2a4-c48a55bd36e5" />
 
-As we can see from the picture below, now we have configured 3 static routers to 3 different networks. Now I have to configure static routes for R2 and R3 to reach R1 hosts. I already configured static route before between R2 and R3 hosts so I only have configure R1 routes for R2 and R3. 
+As we can see from the picture below, now we have configured 3 static routers to 3 different networks. 
 
 <img width="1294" height="556" alt="image" src="https://github.com/user-attachments/assets/a0a399b1-98a1-44d4-93bf-5f2a7e319506" />
+
+Next I configured directly connected route from R2 to R1 and R3 
+
+<img width="1206" height="132" alt="image" src="https://github.com/user-attachments/assets/67b2709d-b671-46ed-9d21-760b23b90914" />
+
 
 
 # Configuring Default Routes 
