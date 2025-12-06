@@ -10,7 +10,11 @@
 
 # Configuring Static Routes 
 
+I had to configure static routes from PC2 network to PC3. Static routes need configuration to both ways of the network if I only configure how R1 and R2 can reach destination network they don't still know how to send it back. 
 
+R2 configuring static route to `172.31.1.128/26` network. Using command `ip route destination network, subnetmask, interface.`
+
+<img width="1274" height="132" alt="image" src="https://github.com/user-attachments/assets/9ec8f28e-9c24-4550-9058-961f2b38fe83" />
 
 
 # Configuring Default Routes 
