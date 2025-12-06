@@ -1,5 +1,11 @@
 # Cisco Packet Tracer - Configuring IPv4 Static and Default Routes
 
+In this excersise I configured the following to Cisco routers:
+- Recursive static routes (next-hop IP of neighbor).
+- Directly connected static routes (interface only).
+- Default static route (last resort or "catch-all" route)
+- I did not configure fully specified static route (both interface + next hop IP address), Cisco packet tracer does not support this in current excersise. 
+
 ## Network Topology
 
 <img width="1290" height="734" alt="image" src="https://github.com/user-attachments/assets/594eb2e1-a7a9-4f6f-b673-e1a584e815ab" />
